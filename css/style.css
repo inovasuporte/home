@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0 0 0;
+    background: transparent;
+}
+
+.logo {
+    width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+footer {
+    color: #fff;
+    text-align: right;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Remoção de espaços brancos indesejados */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ======== NOVO BLOCO: Seção de serviços com imagens ======== */
+
+.servicos-detalhados {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.bloco-direita {
+    flex-direction: row-reverse;
+}
+
+.bloco-esquerda {
+    flex-direction: row;
+}
+
+.servico img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.servico .texto {
+    max-width: 500px;
+    color: #fff;
+}
+
+.servico .texto h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #00bfff; /* tom azul claro para destaque */
+}
+
+.servico .texto p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* ======== Responsividade para telas menores ======== */
+@media (max-width: 768px) {
+    .servico {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .servico img {
+        max-width: 90%;
+    }
+
+    .servico .texto {
+        max-width: 100%;
+    }
+
+    .servico .texto h2 {
+        font-size: 24px;
+    }
+
+    .servico .texto p {
+        font-size: 15px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+.servicos-detalhados {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 20px;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.servico img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.servico .texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Alterna a ordem dos elementos para blocos pares */
+.servicos-detalhados .bloco-esquerda {
+    flex-direction: row-reverse;
+}
+
+.servicos-detalhados .bloco-direita {
+    flex-direction: row;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .servico {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .servico .texto {
+        text-align: center;
+    }
+}
+/* Ajustando o espaçamento entre as linhas */
+.servico .texto p {
+    line-height: 1.4; /* Menos espaçamento entre as linhas */
+}
+
+/* Estilos gerais da seção de serviços */
+.servicos-detalhados {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 20px;
+}
+
+/* Cada serviço */
+.servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    opacity: 0; /* Começam invisíveis para animação */
+    transition: opacity 0.5s ease-out; /* Animação suave ao aparecer */
+}
+
+.servico img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.servico .texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Alterna a ordem dos elementos para blocos pares */
+.servicos-detalhados .bloco-esquerda {
+    flex-direction: row-reverse;
+}
+
+.servicos-detalhados .bloco-direita {
+    flex-direction: row;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .servico {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .servico .texto {
+        text-align: center;
+    }
+}
+
+/* Scroll suave ao rolar a página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animação para quando os elementos entrarem na tela */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.servico.show {
+    opacity: 1;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animação ao rolar */
+/* Animação de fade-in */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Definição da animação de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
