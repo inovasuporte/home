@@ -32,18 +32,18 @@
   </section>
 
   <!-- Seção separada para Missão, Visão e Valores -->
-<section class="section" style="margin-top: 60px;">
-  <h2 class="fade-in" style="text-align: center;">Missão</h2>
-  <p class="fade-in" style="text-align: justify;">
-    Oferecer soluções em tecnologia com agilidade, segurança e excelência, promovendo o crescimento sustentável de empresas por meio de um suporte confiável e personalizado.
-  </p>
+  <section class="section" style="margin-top: 60px;">
+    <h2 class="fade-in" style="text-align: center;">Missão</h2>
+    <p class="fade-in" style="text-align: justify;">
+      Oferecer soluções em tecnologia com agilidade, segurança e excelência, promovendo o crescimento sustentável de empresas por meio de um suporte confiável e personalizado.
+    </p>
 
-  <h2 class="fade-in" style="text-align: center;">Visão</h2>
-  <p class="fade-in" style="text-align: justify;">
-    Ser referência regional em serviços de tecnologia, reconhecida pela qualidade, inovação e comprometimento com os resultados dos nossos clientes.
-  </p>
+    <h2 class="fade-in" style="text-align: center;">Visão</h2>
+    <p class="fade-in" style="text-align: justify;">
+      Ser referência regional em serviços de tecnologia, reconhecida pela qualidade, inovação e comprometimento com os resultados dos nossos clientes.
+    </p>
 
-  <h2 class="fade-in" style="text-align: center;">Valores</h2>
+    <h2 class="fade-in" style="text-align: center;">Valores</h2>
     <ul class="fade-in">
       <li><strong>Agilidade:</strong> Atuar com rapidez e eficiência na entrega de soluções.</li>
       <li><strong>Confiança:</strong> Construir relacionamentos sólidos e transparentes com nossos clientes.</li>
@@ -52,6 +52,17 @@
       <li><strong>Excelência:</strong> Buscar continuamente a melhoria dos nossos serviços e processos.</li>
       <li><strong>Inovação:</strong> Estar em constante evolução para antecipar e superar desafios tecnológicos.</li>
     </ul>
+  </section>
+
+  <!-- Seção de Abertura de Chamados -->
+  <section class="section" style="margin-top: 60px; text-align: center;">
+    <h2 class="fade-in">Precisa de Suporte Técnico?</h2>
+    <p class="fade-in">Clique no botão abaixo para abrir um chamado em nosso sistema de atendimento.</p>
+    <a href="https://inovasuporte.on.spiceworks.com/portal/registrations" target="_blank">
+      <button style="padding: 14px 28px; font-size: 18px; background-color: #28a745; color: white; border: none; border-radius: 10px; cursor: pointer;">
+        Abrir Chamado
+      </button>
+    </a>
   </section>
 
   <footer>
@@ -70,22 +81,23 @@
       </div>
     </div>
   </footer>
-  <script>
-  // Função para adicionar animação aos elementos ao rolar
-  window.addEventListener('scroll', () => {
-    const servicos = document.querySelectorAll('.servico');
-    servicos.forEach(servico => {
-      if (isInViewport(servico)) {
-        servico.classList.add('show');
-      }
-    });
-  });
 
-  // Verifica se o elemento está visível na tela
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
-  }
+  <script>
+    // Função para adicionar animação aos elementos ao rolar
+    window.addEventListener('scroll', () => {
+      const servicos = document.querySelectorAll('.servico');
+      servicos.forEach(servico => {
+        if (isInViewport(servico)) {
+          servico.classList.add('show');
+        }
+      });
+    });
+
+    // Verifica se o elemento está visível na tela
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    }
   </script>
 </body>
 </html>
