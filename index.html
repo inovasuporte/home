@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inova Suporte</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Inova Suporte" class="logo">
+    <nav class="navbar" style="margin-bottom: 30px;">
+      <a href="index.html">Início</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1 class="fade-in">Bem-vindo à Inova Suporte</h1>
+    <p class="fade-in">
+      Fundada em 2015 e sediada em Sertãozinho/SP, a Inova Suporte é uma empresa especializada em soluções tecnológicas voltadas para o ambiente corporativo. Com uma trajetória marcada pela excelência e comprometimento, oferecemos serviços que abrangem desde suporte computacional até a venda de equipamentos e periféricos, sempre com foco na segurança, eficiência e inovação.
+    </p>
+
+    <p class="fade-in">
+      Atendemos exclusivamente ao setor empresarial, oferecendo soluções personalizadas que visam otimizar processos e impulsionar resultados. Nossos valores fundamentais — agilidade, confiança, respeito e integridade — norteiam todas as nossas ações e relacionamentos.
+    </p>
+
+    <p class="fade-in">
+      Na Inova Suporte, acreditamos que a tecnologia é uma ferramenta poderosa para transformar negócios. Por isso, dedicamo-nos a fornecer serviços que não apenas atendam, mas superem as expectativas de nossos clientes, contribuindo para o crescimento sustentável e inovador de suas operações.
+    </p>
+  </section>
+
+  <!-- Seção separada para Missão, Visão e Valores -->
+<section class="section" style="margin-top: 60px;">
+  <h2 class="fade-in" style="text-align: center;">Missão</h2>
+  <p class="fade-in" style="text-align: justify;">
+    Oferecer soluções em tecnologia com agilidade, segurança e excelência, promovendo o crescimento sustentável de empresas por meio de um suporte confiável e personalizado.
+  </p>
+
+  <h2 class="fade-in" style="text-align: center;">Visão</h2>
+  <p class="fade-in" style="text-align: justify;">
+    Ser referência regional em serviços de tecnologia, reconhecida pela qualidade, inovação e comprometimento com os resultados dos nossos clientes.
+  </p>
+
+  <h2 class="fade-in" style="text-align: center;">Valores</h2>
+    <ul class="fade-in">
+      <li><strong>Agilidade:</strong> Atuar com rapidez e eficiência na entrega de soluções.</li>
+      <li><strong>Confiança:</strong> Construir relacionamentos sólidos e transparentes com nossos clientes.</li>
+      <li><strong>Respeito:</strong> Valorizar as pessoas e as parcerias com ética e empatia.</li>
+      <li><strong>Integridade:</strong> Manter a coerência entre discurso e prática, sempre com responsabilidade.</li>
+      <li><strong>Excelência:</strong> Buscar continuamente a melhoria dos nossos serviços e processos.</li>
+      <li><strong>Inovação:</strong> Estar em constante evolução para antecipar e superar desafios tecnológicos.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p class="fade-in">&copy; 2025 Inova Suporte - Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://wa.me/551639455077" target="_blank">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/inovasuporte" target="_blank">
+          <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="mailto:suporte.inovasuporte@outlook.com.br" target="_blank">
+          <img src="images/email-icon.png" alt="E-mail" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script>
+  // Função para adicionar animação aos elementos ao rolar
+  window.addEventListener('scroll', () => {
+    const servicos = document.querySelectorAll('.servico');
+    servicos.forEach(servico => {
+      if (isInViewport(servico)) {
+        servico.classList.add('show');
+      }
+    });
+  });
+
+  // Verifica se o elemento está visível na tela
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensagem Enviada | Inova Suporte</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <style>
+    .agradecimento {
+      text-align: center;
+      margin-top: 100px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .agradecimento h1 {
+      font-size: 2em;
+      color: #003366;
+    }
+
+    .agradecimento p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .botao-voltar {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #003366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .botao-voltar:hover {
+      background-color: #00509e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Inova Suporte" class="logo">
+    <nav class="navbar">
+      <a href="index.html">Início</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="agradecimento">
+    <h1>Mensagem enviada com sucesso!</h1>
+    <p>Obrigado por entrar em contato. Em breve retornaremos.</p>
+    <a href="index.html" class="botao-voltar">Voltar para o Início</a>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Inova Suporte - Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://wa.me/551639455077" target="_blank">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/inovasuporte" target="_blank">
+          <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="mailto:suporte.inovasuporte@outlook.com.br" target="_blank">
+          <img src="images/email-icon.png" alt="E-mail" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

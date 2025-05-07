@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato | Inova Suporte</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Inova Suporte" class="logo fade-in">
+    <nav class="navbar fade-in" style="margin-bottom: 30px;">
+      <a href="index.html">Início</a> |
+      <a href="servicos.html">Serviços</a>
+    </nav>
+  </header>
+
+  <section class="section fade-in">
+    <h2 class="fade-in">Entre em Contato</h2>
+    <p class="fade-in">Preencha o formulário abaixo:</p>
+
+<form action="https://formsubmit.co/suporte.inovasuporte@outlook.com.br" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://lucaspomini.github.io/inovasuporte/obrigado.html">
+  
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br>
+
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="mensagem">Mensagem:</label><br>
+  <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>
+
+  <button type="submit">Enviar</button>
+</form>
+
+    <ul class="fade-in">
+      <li>
+        <img src="images/location-icon.png" alt="Localização" class="social-icon" style="vertical-align: middle;">
+        Rua Arsênio Savegnago, 212 – Sertãozinho/SP – CEP 14161448
+      </li>
+    </ul>
+
+    <div class="map-container fade-in" style="margin-top: 20px;">
+      <iframe 
+        src="https://www.google.com/maps?q=Rua+Arsênio+Savegnago,+212,+Sertãozinho,+SP&output=embed"
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    <div class="footer-container">
+      <p>&copy; 2025 Inova Suporte - Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://wa.me/551639455077" target="_blank">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/inovasuporte" target="_blank">
+          <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="mailto:suporte.inovasuporte@outlook.com.br" target="_blank">
+          <img src="images/email-icon.png" alt="E-mail" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top <= window.innerHeight - 100
+      );
+    }
+
+    function showFadeInElements() {
+      const fadeEls = document.querySelectorAll('.fade-in');
+      fadeEls.forEach(el => {
+        if (isInViewport(el)) {
+          el.classList.add('show');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', showFadeInElements);
+    window.addEventListener('load', showFadeInElements);
+  </script>
+</body>
+</html>
